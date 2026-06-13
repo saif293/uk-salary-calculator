@@ -1,0 +1,109 @@
+.site-footer {
+  background: #1e293b;
+  color: #94a3b8;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 48px 20px 32px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 48px;
+}
+
+.footer-brand {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 10px;
+}
+
+.footer-brand-col p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  color: #64748b;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 9px 12px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-size: 14px;
+}
+
+.newsletter-form input:focus { outline: none; border-color: var(--primary); }
+
+.newsletter-form button {
+  padding: 9px 18px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.newsletter-note { font-size: 12px; color: #475569; }
+.newsletter-success { color: #4ade80; font-size: 13px; }
+
+.footer-links-col h4 {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  color: #cbd5e1;
+  margin-bottom: 14px;
+}
+
+.footer-links-col a {
+  display: block;
+  font-size: 14px;
+  color: #64748b;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color .15s;
+}
+
+.footer-links-col a:hover { color: #e2e8f0; text-decoration: none; }
+
+.footer-bottom {
+  border-top: 1px solid #1e3a5f33;
+  background: #0f172a;
+}
+
+.footer-bottom-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+  color: #475569;
+}
+
+.footer-bottom-inner strong { color: #94a3b8; }
+
+@media (max-width: 640px) {
+  .footer-inner { grid-template-columns: 1fr; gap: 28px; padding: 32px 16px 24px; }
+  .footer-bottom-inner { flex-direction: column; text-align: center; padding: 14px 16px; }
+  .newsletter-form { flex-direction: column; }
+  .newsletter-form input, .newsletter-form button { width: 100%; min-height: 46px; }
+  .footer-links-col a { min-height: 40px; display: flex; align-items: center; }
+}

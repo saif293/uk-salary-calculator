@@ -1,0 +1,131 @@
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.top-tools-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 20px;
+  background: var(--color-top-tools);
+  border-bottom: 1px solid #fde68a;
+  overflow: hidden;
+}
+
+.top-tools-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--color-top-tools-text);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.top-tools-scroll {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.top-tools-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.top-tool-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 14px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--color-text);
+  white-space: nowrap;
+  text-decoration: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.top-tool-pill:hover {
+  border-color: var(--color-accent);
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
+
+.top-tool-pill--more {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.search-bar {
+  background: var(--color-header);
+  padding: 12px 20px;
+}
+
+.search-bar-inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.search-flag {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.search-input:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.search-actions {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.icon-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 18px;
+  transition: background 0.15s;
+}
+
+.icon-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 640px) {
+  .top-tools-bar,
+  .search-bar {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
